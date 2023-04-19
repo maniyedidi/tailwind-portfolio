@@ -8,9 +8,3 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-ul li:before {
-  content: '✓';
-  color: #20c997;
-  padding-right: 10px;
-}

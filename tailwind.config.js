@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         primary: '#198754',
         primaryLight: '#21C896'
+      },
+      listStyleImage:{
+        checkmark:'url("/assets/icons/check.svg")'
       }
     }
   },

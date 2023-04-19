@@ -86,70 +86,68 @@
           </h2>
         </div>
         <!-- Skill as text-->
-        <ul class="flex justify-center gap-10 mt-4 flex-wrap">
+        <div class="flex justify-center gap-10 mt-4 flex-wrap">
           <div
-            class="flex flex-col gap-3 shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] p-4 w-full md:w-[300px]"
+            class="flex flex-col gap-3 relative bg-[#F2F8F9] hover:bg-white hover:shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] p-4 w-full md:w-[300px]"
           >
-            <div class="flex flex-row items-center">
-              <span class="bg-[#20c997] rounded-full w-8 h-8 items-center">
-                <img
-                  src="/assets/icons/frontend-icon.svg"
-                  class="w-8 p-2 h-8"
-                />
-              </span>
-
-              <h3 class="ml-1 text-[#58677c]">UI/UX</h3>
-            </div>
-
-            <li>React/Redux/Angular</li>
-            <li>Mobile App(React native)</li>
-            <li>Expo / Native</li>
-            <li>Javascript</li>
-            <li>Webpack/Gulp/Grunt</li>
-            <li>WHTML/CSS/SASS/LESS</li>
-            <li>Tailwind</li>
+            <span
+              class="bg-[#20c997] rounded-full w-12 h-12 items-center absolute -top-4 -right-2"
+            >
+              <img
+                src="/assets/icons/frontend-icon.svg"
+                class="w-12 p-2 h-12"
+              />
+            </span>
+            <h3 class="ml-1 text-[#58677c]">UI/UX</h3>
+            <ul class="list-image-checkmark pl-4">
+              <li class="pl-4">React/Redux/Angular</li>
+              <li class="pl-4">Mobile App(React native)</li>
+              <li class="pl-4">Expo / Native</li>
+              <li class="pl-4">Javascript</li>
+              <li class="pl-4">Webpack/Gulp/Grunt</li>
+              <li class="pl-4">HTML/CSS/SASS/LESS</li>
+              <li class="pl-4">Tailwind</li>
+            </ul>
           </div>
           <div
-            class="flex flex-col gap-3 shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] p-4 w-full md:w-[300px]"
+            class="flex relative flex-col gap-3 bg-[#F2F8F9] hover:bg-white hover:shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] p-4 w-full md:w-[300px]"
           >
-            <div class="flex flex-row items-center">
-              <span class="bg-[#20c997] rounded-full w-8 h-8 items-center">
-                <img
-                  src="/assets/icons/backend.svg"
-                  class="w-8 p-2 h-8"
-                />
-              </span>
+            <span
+              class="bg-[#20c997] rounded-full w-12 h-12 items-center absolute -top-4 -right-2"
+            >
+              <img src="/assets/icons/backend.svg" class="w-12 p-2 h-12" />
+            </span>
+            <h3 class="ml-1 text-[#58677c]">BACKEND</h3>
 
-              <h3 class="ml-1 text-[#58677c]">BACKEND</h3>
-            </div>
-
-            <li>NodeJs(Express)</li>
-            <li>Java Spring Boot</li>
-            <li>MongoDB/PostgresSQL/MySQL</li>
-            <li>Expo / Native</li>
+            <ul class="list-image-checkmark pl-4">
+              <li class="pl-4">NodeJs(Express)</li>
+              <li class="pl-4">Java Spring Boot</li>
+              <li class="pl-4">MongoDB/PostgresSQL/MySQL</li>
+              <li class="pl-4">Expo / Native</li>
+            </ul>
           </div>
           <div
-            class="flex flex-col gap-3 shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] p-4 w-full md:w-[300px]"
+            class="flex relative flex-col gap-3 bg-[#F2F8F9] hover:bg-white hover:shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] p-4 w-full md:w-[300px]"
           >
-            <div class="flex flex-row items-center">
-              <span class="bg-[#20c997] rounded-full w-8 h-8 items-center">
-                <img
-                  src="/assets/icons/other.svg"
-                  class="w-8 p-2 h-8"
-                />
-              </span>
+            <span
+              class="bg-[#20c997] rounded-full w-12 h-12 absolute -right-2 -top-4"
+            >
+              <img src="/assets/icons/other.svg" class="w-12 p-2 h-12" />
+            </span>
 
-              <h3 class="ml-1 text-[#58677c]">OTHER</h3>
-            </div>
-            <li>Git</li>
-            <li>Jenkins</li>
-            <li>Heroku</li>
-            <li>AWS</li>
-            <li>Wordpress/Shopify</li>
-            <li>Figma</li>
-            <li>VS Code / intellij</li>
+            <h3 class="ml-1 text-[#58677c]">OTHER</h3>
+
+            <ul class="list-image-checkmark pl-4">
+              <li class="pl-4">Git</li>
+              <li class="pl-4">Jenkins</li>
+              <li class="pl-4">Heroku</li>
+              <li class="pl-4">AWS</li>
+              <li class="pl-4">Wordpress/Shopify</li>
+              <li class="pl-4">Figma</li>
+              <li class="pl-4">VS Code / intellij</li>
+            </ul>
           </div>
-        </ul>
+        </div>
 
         <!-- Skill as Icons-->
 
@@ -224,13 +222,47 @@
     <section id="projects">
       <div class="flex flex-col justify-center items-center p-10">
         <h1 class="text-[30px] text-[#58677c]">Blogs And Open Source</h1>
-        <div class="text-center">
+        <div class="text-center mb-4">
           <h2>Below are my medium articles and open source modules</h2>
         </div>
-        <!-- Skill as text-->
-        <div>
-          <iframe src="https://medium.com/media/22af285ec51b/embed" frameborder="0" allowfullscreen></iframe>
-
+        <div class="flex flex-row gap-3 flex-wrap">
+          <div
+            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+          >
+            <img
+              src="/assets/main-image/pf_improve.webp"
+              alt=""
+              class="w-80 h-40"
+            />
+            <div class="text-center">
+              Improve the performance of React JS using Content hash
+            </div>
+          </div>
+          <div
+            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+          >
+            <img
+              src="/assets/main-image/version_change.webp"
+              alt=""
+              class="w-80 h-40"
+            />
+            <div class="text-center">
+              Improve the performance of React JS using Content hash
+            </div>
+          </div>
+          <div
+            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+          >
+            <img
+              src="/assets/main-image/react_portal.webp"
+              alt=""
+              class="w-80 h-40"
+            />
+            <div class="text-center">
+              Improve the performance of React JS using Content hash
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- About Overview -->
@@ -241,6 +273,6 @@
           <h2>Things i have built so far</h2>
         </div>
       </div>
-    </section>    
+    </section>
   </body>
 </html>
