@@ -8,3 +8,16 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-top{
+  transform: rotate(45deg) translateY(5px) translate(6px);
+  
+}
+
+.open .hamburger-bottom{  
+  transform: rotate(-45deg) translateY(-6px) translate(6px);  
+}
