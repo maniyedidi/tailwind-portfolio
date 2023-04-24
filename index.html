@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Manikanta</title>
   </head>
-  <body class="font-mono">
+  <body class="font-mono scroll-smooth">
     <!-- Nav Bar -->
     <nav
       class="relative container-full mx-auto p-6 shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
@@ -75,7 +75,7 @@
             class="absolute hidden flex-col items-center p-4 mt-8 space-y-6 font-bold bg-white left-6 right-9 drop-shadow-md"
           >
             <a href="#" class="hover:text-primary">Home</a>
-            <a href="#skills" class="hover:text-primary">Skills</a>
+            <a href="#skills" class="hover:text-primary ">Skills</a>
             <a href="#projects" class="hover:text-primary">Projects</a>
             <a href="#about" class="hover:text-primary">About</a>
           </div>
@@ -251,13 +251,15 @@
     <!-- Projects Overview -->
     <section id="projects">
       <div class="flex flex-col justify-center items-center p-10">
-        <h1 class="text-[30px] text-[#58677c]">Blogs And Open Source</h1>
+        <h1 class="text-[30px] text-[#58677c]">Blogs & Open Source </h1>
         <div class="text-center mb-4">
-          <h2>Below are my medium articles and open source modules</h2>
+          <h2>Below are my medium articles, open source modules</h2>
         </div>
         <div class="flex flex-row gap-3 flex-wrap">
-          <div
+          <a
             class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            href="https://medium.com/@maniyedidi/improve-the-performance-of-react-js-using-content-hash-421bf764bd2a"
+            target="_blank"
           >
             <img
               src="/assets/main-image/pf_improve.webp"
@@ -267,7 +269,7 @@
             <div class="text-center">
               Improve the performance of React JS using Content hash
             </div>
-          </div>
+          </a>
           <div
             class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
           >
@@ -280,8 +282,10 @@
               Detect version change in single-page application — React SPA
             </div>
           </div>
-          <div
+          <a
             class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            href="https://medium.com/@maniyedidi/what-is-react-portal-and-where-do-we-use-it-3dd08419825"
+            target="_blank"
           >
             <img
               src="/assets/main-image/react_portal.webp"
@@ -291,7 +295,7 @@
             <div class="text-center">
               What is React Portal and Where do we use it?
             </div>
-          </div>
+          </a>
           <div
             class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
           >
@@ -304,6 +308,32 @@
               Send data between Electron App and React JS App
             </div>
           </div>
+        </div>
+        <div class="flex flex-row mt-4 gap-3 flex-wrap">
+          <a
+            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            href="https://www.npmjs.com/package/react-read-less-more"
+            target="_blank"
+          >
+            <img src="/assets/main-image/npm.jpeg" alt="" class="w-80 h-40" />
+            <div class="text-center">Show more and less react component</div>
+          </a>
+          <a
+            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            href="https://www.npmjs.com/package/react-json-to-excel"
+            target="_blank"
+          >
+            <img src="/assets/main-image/npm.jpeg" alt="" class="w-80 h-40" />
+            <div class="text-center">Download Json as Excel in React</div>
+          </a>
+          <a
+            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            href="https://www.npmjs.com/package/react-version-tracker"
+            target="_blank"
+          >
+            <img src="/assets/main-image/npm.jpeg" alt="" class="w-80 h-40" />
+            <div class="text-center">Track version and update user in SPA</div>
+          </a>
         </div>
       </div>
     </section>
