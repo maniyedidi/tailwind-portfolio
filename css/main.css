@@ -605,6 +605,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -665,8 +669,20 @@ video {
   width: 100%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
+.max-w-\[1000px\] {
+  max-width: 1000px;
 }
 
 .list-image-checkmark {
@@ -721,6 +737,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-full {
@@ -888,6 +908,10 @@ video {
 
   .md\:w-\[300px\] {
     width: 300px;
+  }
+
+  .md\:w-\[100\%\] {
+    width: 100%;
   }
 }
 
