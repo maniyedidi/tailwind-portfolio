@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Manikanta</title>
   </head>
-  <body class="font-mono scroll-smooth">
+  <body class="font-poppins scroll-smooth">
     <!-- Nav Bar -->
     <nav
-      class="relative container-full mx-auto p-6 shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+      class="relative container-full mx-auto p-4 md:p-6 shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
     >
       <div class="flex items-center justify-between">
         <!-- LOGO -->
         <div class="pt-2">
-          <h2 class="name">ManiYedidi</h2>
+          <h2 class="name text-[30px]">ManiYedidi</h2>
         </div>
         <!-- Menu items -->
         <div class="hidden md:flex space-x-12 items-center">
           <a href="#" class="hover:text-primary">Home</a>
           <a href="#skills" class="hover:text-primary">Skills</a>
           <a href="#projects" class="hover:text-primary">Projects</a>
+          <a href="#blogs" class="hover:text-primary">Blogs</a>
           <a href="#about" class="hover:text-primary">About</a>
           <div class="flex space-x-3 items-center">
             <a
@@ -75,9 +76,37 @@
             class="absolute hidden flex-col items-center p-4 mt-8 space-y-6 font-bold bg-white left-6 right-9 drop-shadow-md"
           >
             <a href="#" class="hover:text-primary">Home</a>
-            <a href="#skills" class="hover:text-primary">Skills</a>
-            <a href="#projects" class="hover:text-primary">Projects</a>
-            <a href="#about" class="hover:text-primary">About</a>
+            <a href="#skills" class="hover:text-primary" onclick="openMenu()">Skills</a>
+            <a href="#projects" class="hover:text-primary" onclick="openMenu()"> Projects</a>
+            <a href="#blogs" class="hover:text-primary" onclick="openMenu()">Blogs</a>
+            <a href="#about" class="hover:text-primary" onclick="openMenu()">About</a>
+
+            <div class="flex space-x-3 items-center">
+              <a
+                href="https://www.linkedin.com/in/manikanta-yedidi-70586b135/"
+                target="blank"
+                class="linkedin"
+                ><img src="/assets/icons/linkdin.png" class="w-10 h-10"
+              /></a>
+              <a
+                href="https://twitter.com/ManikantaYedidi"
+                target="blank"
+                class="twitter"
+                ><img src="/assets/icons/twitter.png" class="w-10 h-10"
+              /></a>
+              <a
+                href="https://github.com/maniyedidi"
+                target="blank"
+                class="twitter"
+                ><img src="/assets/icons/github-small.png" class="w-10 h-10"
+              /></a>
+              <a
+                href="https://medium.com/@maniyedidi"
+                target="blank"
+                class="twitter"
+                ><img src="/assets/icons/medium.png" class="w-10 h-10"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
@@ -85,9 +114,9 @@
     <!-- Home Section -->
     <section id="home">
       <div
-        class="container flex flex-row justify-center items-center mx-auto mt-10 gap-10 px-10"
+        class="container flex flex-row justify-center items-center mx-auto md:mt-10 gap-5 p-5"
       >
-        <h2 class="text-lg">
+        <h2 class="text-[30px] md:text-[40px]">
           Hi 👋🏽
           <div>My name is</div>
           <div class="text-primary font-bold name">Manikanta Yedidi</div>
@@ -96,7 +125,7 @@
         <div>
           <img
             src="/assets/mani.jpeg"
-            class="rounded-full w-80 md:w-32 lg:w-48"
+            class="rounded-full w-80 md:w-40 lg:w-58"
           />
         </div>
       </div>
@@ -104,9 +133,9 @@
     <!-- Skills Overview -->
     <section id="skills">
       <div class="flex flex-col justify-center items-center p-10">
-        <h1 class="text-[30px] text-[#58677c]">My Skills Overview</h1>
+        <h1 class="text-[32px] text-[#58677c]">My Skills Overview</h1>
         <div class="text-center">
-          <h2>
+          <h2 class="text-[20px] text-[#666666]">
             I have more than 10 years experience building rich web applications
             for clients all over the world.
           </h2>
@@ -133,10 +162,10 @@
               <li class="pl-4">React/Redux/Angular</li>
               <li class="pl-4">Mobile App(React native)</li>
               <li class="pl-4">Expo / Native</li>
-              <li class="pl-4">Javascript</li>
-              <li class="pl-4">Webpack/Gulp/Grunt</li>
+              <li class="pl-4">Javascript</li>              
               <li class="pl-4">HTML/CSS/SASS/LESS</li>
-              <li class="pl-4">Tailwind</li>
+              <li class="pl-4">Tailwind / bootstrap </li>
+              <li class="pl-4">Material UI </li>
             </ul>
           </div>
           <div
@@ -153,7 +182,7 @@
               <li class="pl-4">NodeJs(Express)</li>
               <li class="pl-4">Java Spring Boot</li>
               <li class="pl-4">MongoDB/PostgresSQL/MySQL</li>
-              <li class="pl-4">Expo / Native</li>
+              <li class="pl-4">Prisma</li>
             </ul>
           </div>
           <div
@@ -174,6 +203,7 @@
               <li class="pl-4">AWS</li>
               <li class="pl-4">Wordpress/Shopify</li>
               <li class="pl-4">Figma</li>
+              <li class="pl-4">Webpack/Gulp/Grunt</li>
               <li class="pl-4">VS Code / intellij</li>
             </ul>
           </div>
@@ -238,146 +268,212 @@
         </div>
       </div>
     </section>
-
-    <!-- Projects Overview -->
-    <section id="projects">
-      <div class="flex flex-col justify-center items-center p-10">
-        <h1 class="text-[30px] text-[#58677c]">Projects</h1>
-        <div class="text-center">
-          <h2>Things i have built so far</h2>
-        </div>
-
-        <div
-          class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
-          href="https://www.npmjs.com/package/react-read-less-more"
-          target="_blank"
-        >
-          <img src="/assets/main-image/ve.jpeg" alt="" class="w-80 h-40" />
-          <div class="text-center">Video Editor pro</div>
-          <div>Skills : Next JS, Tailwind, NodeJs , OtpLess </div>
-          <div><a href="https://video-editor-pro.netlify.app/">Demo</a> </div>
-        </div>
-      </div>
-    </section>
-    <!-- Projects Overview -->
-    <section id="projects">
-      <div class="flex flex-col justify-center items-center p-10">
-        <h1 class="text-[30px] text-[#58677c]">Blogs & Open Source</h1>
+    <!-- Blogs & Open Source Overview -->
+    <section id="blogs">
+      <div class="flex flex-col justify-center items-center p-5 md:p-10">
+        <h1 class="text-[32px] text-[#58677c]">Blogs & Open Source</h1>
         <div class="text-center mb-4">
-          <h2>Below are my medium articles, open source modules</h2>
+          <h2 class="text-[20px] text-[#666666]">
+            Below are my medium articles, open source modules
+          </h2>
         </div>
         <div class="flex flex-row gap-3 flex-wrap">
           <a
-            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            class="flex gap-3 pb-4 flex-col w-[100%] md:max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
             href="https://medium.com/@maniyedidi/improve-the-performance-of-react-js-using-content-hash-421bf764bd2a"
             target="_blank"
           >
             <img
               src="/assets/main-image/pf_improve.webp"
               alt=""
-              class="w-80 h-40"
+              class="w-[100%] md:w-80  h-40"
             />
             <div class="text-center">
               Improve the performance of React JS using Content hash
             </div>
           </a>
           <a
-            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            class="flex gap-3 pb-4 flex-col w-[100%] md:max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
             href="https://medium.com/@maniyedidi/how-to-use-react-version-tracker-41ebf3b8f1f9"
             target="_blank"
           >
             <img
               src="/assets/main-image/version_change.webp"
               alt=""
-              class="w-80 h-40"
+              class="w-[100%] md:w-80  h-40"
             />
             <div class="text-center">
               Detect version change in single-page application — React SPA
             </div>
           </a>
           <a
-            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            class="flex gap-3 pb-4 flex-col w-[100%] md:max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
             href="https://medium.com/@maniyedidi/what-is-react-portal-and-where-do-we-use-it-3dd08419825"
             target="_blank"
           >
             <img
               src="/assets/main-image/react_portal.webp"
               alt=""
-              class="w-80 h-40"
+              class="w-[100%] md:w-80  h-40"
             />
             <div class="text-center">
               What is React Portal and Where do we use it?
             </div>
           </a>
           <a
-            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            class="flex gap-3 pb-4 flex-col w-[100%] md:max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
             href="https://medium.com/@maniyedidi"
             target="_blank"
           >
             <img
               src="/assets/main-image/view_more.png"
               alt=""
-              class="w-80 h-40"
+              class="w-[100%] md:w-80  h-40"
             />
             <div class="text-center">Have look on other in medium</div>
           </a>
         </div>
         <div class="flex flex-row mt-4 gap-3 flex-wrap">
           <a
-            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            class="flex gap-3 pb-4 flex-col w-[100%] w-[100%] md:max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
             href="https://www.npmjs.com/package/react-read-less-more"
             target="_blank"
           >
-            <img src="/assets/main-image/npm.jpeg" alt="" class="w-80 h-40" />
+            <img src="/assets/main-image/npm.jpeg" alt="" class="w-[100%] md:w-80 h-40" />
             <div class="text-center">Show more and less react component</div>
           </a>
           <a
-            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            class="flex gap-3 pb-4 flex-col w-[100%] md:max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
             href="https://www.npmjs.com/package/react-json-to-excel"
             target="_blank"
           >
-            <img src="/assets/main-image/npm.jpeg" alt="" class="w-80 h-40" />
+            <img src="/assets/main-image/npm.jpeg" alt="" class="w-[100%] md:w-80  h-40" />
             <div class="text-center">Download Json as Excel in React</div>
           </a>
           <a
-            class="flex gap-3 pb-4 flex-col max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+            class="flex gap-3 pb-4 flex-col w-[100%] md:max-w-[300px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
             href="https://www.npmjs.com/package/react-version-tracker"
             target="_blank"
           >
-            <img src="/assets/main-image/npm.jpeg" alt="" class="w-80 h-40" />
+            <img src="/assets/main-image/npm.jpeg" alt="" class="w-[100%] md:w-80  h-40" />
             <div class="text-center">Track version and update user in SPA</div>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Overview -->
+    <section id="projects">
+      <div class="flex flex-col justify-center items-center p-10">
+        <h1 class="text-[32px] text-[#58677c]">Projects</h1>
+        <div class="text-center mb-2">
+          <h2 class="text-[20px] text-[#666666]">Things i have built so far</h2>
+        </div>
+        <div class="flex flex-row mt-4 gap-3 flex-wrap">
+          <div
+            class="flex gap-3 p-4 flex-col w-[400px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+          >
+            <img src="/assets/main-image/ve.jpeg" alt="" class="w-[100%] h-60" />
+            <div class="text-center">Video Editor pro</div>
+            <div class="text-[14px]">About : User can edit videos online</div>
+            <div class="text-[12px] font-bold">
+              Skills : Next JS, Tailwind, NodeJs , OtpLess
+            </div>
+            <div>
+              <a
+                href="https://video-editor-pro.netlify.app/"
+                class="text-[#01baef] hover:text-[#20c997]"
+                target="_blank"
+                >Live Preview</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex gap-3 p-4 flex-col w-[400px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+          >
+            <img
+              src="/assets/main-image/static_web.jpg"
+              alt=""
+              class="w-[100%] h-60"
+            />
+            <div class="text-center">Share Zone</div>
+            <div class="text-[14px]">
+              About : Static web site 
+            </div>
+            <div class="text-[12px] font-bold">
+              Skills : HTML, CSS, JavaScript
+            </div>
+            <div>
+              <a
+                href="https://maniyedidi.github.io/portfolio/"
+                class="text-[#01baef] hover:text-[#20c997]"
+                target="_blank"
+                >Live Preview</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="flex gap-3 p-4 flex-col w-[400px] bg-white shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
+          >
+            <img
+              src="/assets/main-image/sharezone.jpg"
+              alt=""
+              class="w-[100%] h-60"
+            />
+            <div class="text-center">Share Zone</div>
+            <div class="text-[14px]">
+              About : User can post / invite friends to share food and bills
+            </div>
+            <div class="text-[12px] font-bold">
+              Skills : Angular, SCSS, NodeJs, Mongodb
+            </div>
+            <div>
+              <a
+                href="https://share-zone.netlify.app/"
+                class="text-[#01baef] hover:text-[#20c997]"
+                target="_blank"
+                >Live Preview</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- About Overview -->
     <section id="about">
       <div class="flex flex-col justify-center items-center p-10">
-        <h1 class="text-[30px] text-[#58677c]">About Me</h1>
+        <h1 class="text-[32px] text-[#58677c]">About Me</h1>
         <div class="text-center mb-4">
-          <h2>
+          <h2 class="text-[20px] text-[#666666]">
             I'm a full-stack developer specialised in frontend and backend
             development for complex scalable web apps
           </h2>
         </div>
         <div class="max-w-[1000px]">
-          <div class="w-[50%]">
-            <p class="mb-4">
+          <div>
+            <p class="mb-4 text-[20px]">
               Hello, my name is Manikanta, and I am a full-stack developer with
               over 10 years of experience in the field. I have a passion for
               designing and building complex web applications that deliver value
               to users. Over the course of my career, I have honed my skills in
               both front-end and back-end development, including technologies
-              such as HTML, CSS, JavaScript, React, Node.js, and JAVA.
+              such as
+              <strong>
+                HTML, CSS, JavaScript, React / Angular, Node.js, and JAVA
+              </strong>
+              <a href="#skills" class="text-[#01baef] hover:text-[#20c997]"
+                >Skills over view</a
+              >
             </p>
-            <p class="mb-4">
+            <p class="mb-4 text-[20px]">
               I am a self-motivated and detail-oriented developer who takes
               pride in delivering high-quality work that meets project
               requirements and exceeds expectations. I enjoy collaborating with
               cross-functional teams to achieve project goals and am always
               seeking new challenges to help me continue growing as a developer.
             </p>
-            <p class="mb-4">
+            <p class="mb-4 text-[20px]">
               In my free time, I enjoy exploring new technologies and working on
               personal projects that allow me to experiment with different
               frameworks and languages. If you have a project you'd like to

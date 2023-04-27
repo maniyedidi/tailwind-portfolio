@@ -7,14 +7,17 @@ module.exports = {
       md: '768px',
       lg: '976px',
       xl: '1440px'
-    },    
+    },
     extend: {
       colors: {
         primary: '#198754',
         primaryLight: '#21C896'
       },
-      listStyleImage:{
-        checkmark:'url("/assets/icons/check.svg")'
+      listStyleImage: {
+        checkmark: 'url("/assets/icons/check.svg")'
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif']
       }
     }
   },
