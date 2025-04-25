@@ -968,6 +968,9 @@ html {
   }
 }
 
+.object-cover {
+  object-fit: cover;
+}
 
 .mySlides , .mySlides2, .mySlides3 {display: none}
 img {vertical-align: middle;}
